@@ -1,0 +1,100 @@
+/* General body styles */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 12pt;
+  margin: 20px;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark gray for text */
+}
+
+/* Styling for the container */
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+  background-color: #fffff0; /* Very light yellow background */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section dividers */
+.section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #87ceeb; /* Light blue divider */
+}
+
+/* Heading styles */
+h1 {
+  font-size: 36px;
+  color: #4682b4; /* Steel blue */
+}
+
+h2 {
+  font-size: 28px;
+  color: #87ceeb; /* Light blue */
+}
+
+h3 {
+  font-size: 24px;
+  color: #4682b4; /* Steel blue */
+}
+
+/* Paragraph styles */
+p,
+ul,
+ol {
+  font-size: 14pt;
+  color: #333; /* Standard gray */
+}
+
+/* Links styling */
+a {
+  color: #4682b4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd700; /* Gold on hover */
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ff4500; /* Orange-red when active */
+}
+
+/* List styling */
+ul,
+ol {
+  margin-left: 20px;
+}
+
+ul li,
+ol li {
+  margin-bottom: 10px;
+}
+
+/* Table styling (if you decide to use it later) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+  font-size: 14px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
