@@ -5,10 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afeef Shaikh</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="scripts.js" defer></script>
   </head>
   <body>
     <div class="container">
-      <h1>Afeef Shaikh</h1>
+      <header>
+        <img
+          src="Afeef's Photo.jpg"
+          alt="Afeef Shaikh"
+          class="profile-image"
+          id="profile-image"
+        />
+        <h1>Afeef Shaikh</h1>
+      </header>
+
+      <!-- Button to prompt user's name -->
+      <button id="name-button">Enter Your Name</button>
+      <p id="name-display"></p>
+
+      <!-- Navigation Bar -->
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/afeef-shaikh-204903243/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/afeef-shaikh" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="/Afeef_Shaikh_SWE_Resume.pdf" target="_blank">Resume</a>
+          </li>
+          <!-- Updated to link to your resume -->
+        </ul>
+      </nav>
+
+      <!-- Blue horizontal line after the nav bar -->
+      <hr class="blue-line" />
 
       <div class="section">
         <h2>Education History</h2>
@@ -83,37 +119,45 @@
         </ul>
       </div>
 
+      <!-- Connect with me section with updated table -->
       <div class="section">
-        <h3>Connect with me: </h3>
-        
-
-      <!-- Adding the table with links as described in the instructions -->
-      <div class="section">
-        <table>
-          <tr>
-            <td>
-              <div class="link-text">
-                <a
-                  href="https://www.linkedin.com/in/afeef-shaikh-204903243/"
-                  target="_blank"
-                  >LinkedIn Profile</a
-                >
-              </div>
-            </td>
-            <td><div class="link-desc">LinkedIn</div></td>
-          </tr>
-          <tr>
-            <td>
-              <div class="link-text">
-                <a href="https://github.com/afeef-shaikh" target="_blank"
-                  >GitHub Profile</a
-                >
-              </div>
-            </td>
-            <td><div class="link-desc">GitHub</div></td>
-          </tr>
-        </table>
+        <h3>Connect with me:</h3>
+        <div class="connect-me-table">
+          <table>
+            <tr>
+              <td>
+                <div class="link-text">
+                  <a
+                    href="https://www.linkedin.com/in/afeef-shaikh-204903243/"
+                    target="_blank"
+                    >LinkedIn Profile</a
+                  >
+                </div>
+              </td>
+              <td><div class="link-desc">LinkedIn</div></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="link-text">
+                  <a href="https://github.com/afeef-shaikh" target="_blank"
+                    >GitHub Profile</a
+                  >
+                </div>
+              </td>
+              <td><div class="link-desc">GitHub</div></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="link-text">
+                  <a href="/Afeef_Shaikh_SWE_Resume.pdf">Resume</a>
+                </div>
+              </td>
+              <td><div class="link-desc">Resume</div></td>
+            </tr>
+          </table>
+        </div>
       </div>
+
       <footer>
         <div class="footer-content">
           <p>&copy; 2024 Afeef Shaikh. All rights reserved.</p>
@@ -121,6 +165,5 @@
         </div>
       </footer>
     </div>
-    
   </body>
 </html>
