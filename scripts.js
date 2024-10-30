@@ -47,20 +47,34 @@ navLinks.forEach((link) => {
   // Function to handle form submission
   submitBtn.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default form submission behavior
+
     const formData = new FormData(form); // Get form data
+    const data = {};
 
-    // Log the form data (or save it to local storage, etc.)
-    console.log("Form Submitted:");
+    // Store each form input in an object and in local storage
     formData.forEach((value, key) => {
-      console.log(`${key}: ${value}`);
+      data[key] = value;
     });
+    localStorage.setItem("contactFormData", JSON.stringify(data));
 
-    // Optionally, display a confirmation message
     alert("Your form has been submitted!");
+    console.log("Form Submitted:", data);
+  });
+
+  // Function to retrieve and populate form data from local storage
+  window.addEventListener("load", function () {
+    const savedData = JSON.parse(localStorage.getItem("contactFormData"));
+    if (savedData) {
+      Object.keys(savedData).forEach((key) => {
+        const field = form.elements[key];
+        if (field) field.value = savedData[key]; // Populate each field with saved data
+      });
+    }
   });
 
   // Function to handle form clearing
   clearBtn.addEventListener("click", function () {
-    form.reset(); // Reset the form fields to their default values
+    form.reset(); // Reset form fields to default values
+    localStorage.removeItem("contactFormData"); // Clear form data from local storage
   });
 });
