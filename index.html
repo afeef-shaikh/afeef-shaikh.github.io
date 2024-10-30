@@ -19,9 +19,9 @@
         <h1>Afeef Shaikh</h1>
       </header>
 
-      <!-- Button to prompt user's name -->
+      <!-- Button to prompt user's name
       <button id="name-button">Enter Your Name</button>
-      <p id="name-display"></p>
+      <p id="name-display"></p> -->
 
       <!-- Navigation Bar -->
       <nav>
@@ -39,7 +39,10 @@
           <li>
             <a href="/Afeef_Shaikh_SWE_Resume.pdf" target="_blank">Resume</a>
           </li>
-          <!-- Updated to link to your resume -->
+          <li>
+            <a href="#contact-form">Contact</a>
+            <!-- New Contact nav item -->
+          </li>
         </ul>
       </nav>
 
@@ -156,6 +159,88 @@
             </tr>
           </table>
         </div>
+      </div>
+
+      <!-- Contact Form Section -->
+      <div class="section" id="contact-form">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" /><br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" /><br /><br />
+
+          <!-- Gender section -->
+          <div class="form-group">
+            <label for="gender">Gender:</label>
+            <div class="gender-options">
+              <label
+                ><input type="radio" name="gender" value="male" /> Male</label
+              >
+              <label
+                ><input type="radio" name="gender" value="female" />
+                Female</label
+              >
+              <label
+                ><input type="radio" name="gender" value="other" /> Other</label
+              >
+            </div>
+          </div>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+          </select>
+
+          <!-- Topics of Interest section -->
+          <div class="form-group">
+            <label for="topics">Topics of Interest:</label>
+            <div class="topics-options">
+              <label
+                ><input type="checkbox" name="topics" value="AI" /> AI</label
+              >
+              <label
+                ><input type="checkbox" name="topics" value="web-development" />
+                Web Development</label
+              >
+              <label
+                ><input type="checkbox" name="topics" value="data-science" />
+                Data Science</label
+              >
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <label for="contact-method">Preferred Contact Method:</label>
+            <select id="contact-method" name="contact-method">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="text">Text</option>
+            </select>
+          </div>
+
+          <!-- 
+          This section of the code includes the "Submit" and "Clear/Reset" buttons for the form. 
+          - The "Submit" button, when clicked, retrieves the input data from the form fields 
+            and stores it in the browser's local storage.
+          - The "Clear" button, when clicked, resets all input fields in the form to their default values. 
+          -->
+          <div class="form-group">
+            <button type="submit" id="submitBtn">Submit</button>
+            <button type="button" id="clearBtn">Clear</button>
+          </div>
+        </form>
       </div>
 
       <footer>

@@ -139,3 +139,55 @@ footer {
   text-align: center;
   margin-top: 30px;
 }
+
+/*----------------------*/
+/* Form styles */
+form {
+  background-color: #e6f7ff; /* Light blue background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; /* Add some space above the form */
+}
+
+/* Form labels */
+form label {
+  font-weight: bold;
+  display: block; /* Display labels as block for better layout */
+  margin-top: 10px;
+}
+
+/* Form inputs and textarea */
+form input,
+form textarea {
+  width: calc(100% - 22px); /* Full width minus padding and border */
+  padding: 10px;
+  border: 1px solid #4682b4; /* Match border color with navigation */
+  border-radius: 5px;
+  margin-top: 5px; /* Space above inputs */
+}
+
+/* Form button styles */
+form button {
+  margin-top: 10px;
+  width: 100%; /* Full width for the buttons */
+}
+
+/* Form group styles */
+.form-group {
+  margin-top: 15px; /* Space above each form group */
+}
+
+/* Flex container for gender options */
+.gender-options,
+.topics-options {
+  display: flex; /* Use flexbox to align items */
+  gap: 20px; /* Space between options */
+  margin-top: 5px; /* Space above the options */
+}
+
+.gender-options label,
+.topics-options label {
+  display: flex; /* Align label text with radio/checkbox */
+  align-items: center; /* Center align items vertically */
+}
