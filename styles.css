@@ -191,3 +191,170 @@ form button {
   display: flex; /* Align label text with radio/checkbox */
   align-items: center; /* Center align items vertically */
 }
+
+/* Lab 8 Section Styling */
+#accessibility {
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.accessibility-controls {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.access-btn {
+  display: inline-flex;
+  align-items: center;
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.access-btn:hover {
+  background-color: #356086;
+  transform: translateY(-2px);
+}
+
+.btn-icon {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.media-section {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.audio-container {
+  margin: 20px 0;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.media-caption {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* High Contrast Theme */
+.high-contrast {
+  background-color: #000; /* Black background for high contrast */
+  color: #fff; /* White text for high contrast */
+}
+
+.high-contrast a {
+  color: #00ff00; /* Bright green for links */
+}
+
+.high-contrast .container,
+.high-contrast #accessibility,
+.high-contrast .section {
+  background-color: #333; /* Dark background for content sections */
+  color: #fff; /* White text */
+}
+
+.high-contrast .access-btn {
+  background-color: #00ff00 !important;
+  color: #000000 !important;
+}
+
+.high-contrast a {
+  color: #00ff00 !important;
+}
+
+.high-contrast .image-caption,
+.high-contrast .media-caption {
+  color: #ffffff !important;
+  background-color: #444444 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .access-btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Alt text description styling */
+.alt-text-description {
+  font-size: 0.9em;
+  color: #666;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: display 0.3s ease;
+}
+
+/* High contrast mode specific styles */
+.high-contrast-mode {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast-mode .container {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.high-contrast-mode a {
+  color: #00ff00 !important;
+}
+
+/* Ensure buttons remain visible in high contrast mode */
+.high-contrast-mode .access-btn {
+  background-color: #00ff00 !important;
+  color: #000000 !important;
+}

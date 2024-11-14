@@ -43,6 +43,9 @@
             <a href="#contact-form">Contact</a>
             <!-- New Contact nav item -->
           </li>
+          <li>
+            <a href="#accessibility">Accessibility Features</a>
+          </li>
         </ul>
       </nav>
 
@@ -174,62 +177,6 @@
           <label for="phone">Phone:</label>
           <input type="tel" id="phone" name="phone" /><br /><br />
 
-          <label for="dob">Date of Birth:</label>
-          <input type="date" id="dob" name="dob" /><br /><br />
-
-          <!-- Gender section -->
-          <div class="form-group">
-            <label for="gender">Gender:</label>
-            <div class="gender-options">
-              <label
-                ><input type="radio" name="gender" value="male" /> Male</label
-              >
-              <label
-                ><input type="radio" name="gender" value="female" />
-                Female</label
-              >
-              <label
-                ><input type="radio" name="gender" value="other" /> Other</label
-              >
-            </div>
-          </div>
-
-          <label for="country">Country:</label>
-          <select id="country" name="country">
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-            <option value="uk">UK</option>
-            <option value="india">India</option>
-          </select>
-
-          <!-- Topics of Interest section -->
-          <div class="form-group">
-            <label for="topics">Topics of Interest:</label>
-            <div class="topics-options">
-              <label
-                ><input type="checkbox" name="topics" value="AI" /> AI</label
-              >
-              <label
-                ><input type="checkbox" name="topics" value="web-development" />
-                Web Development</label
-              >
-              <label
-                ><input type="checkbox" name="topics" value="data-science" />
-                Data Science</label
-              >
-            </div>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-
-            <label for="contact-method">Preferred Contact Method:</label>
-            <select id="contact-method" name="contact-method">
-              <option value="email">Email</option>
-              <option value="phone">Phone</option>
-              <option value="text">Text</option>
-            </select>
-          </div>
-
           <!-- 
           This section of the code includes the "Submit" and "Clear/Reset" buttons for the form. 
           - The "Submit" button, when clicked, retrieves the input data from the form fields 
@@ -243,6 +190,86 @@
         </form>
       </div>
 
+      <!-- Lab 8 Section -->
+      <div class="section" id="accessibility">
+        <h2>Accessibility Features</h2>
+
+        <div class="accessibility-controls">
+          <h3>Accessibility Options</h3>
+          <button onclick="toggleTextSize()" class="access-btn">
+            <button onclick="toggleColorScheme()" class="access-btn">
+            <button onclick="showAllAltText()" class="access-btn">
+        </div>
+
+        <div class="media-section">
+          <h3>Featured Audio Content</h3>
+          <div class="audio-container">
+            <iframe
+              width="100%"
+              height="166"
+              scrolling="no"
+              frameborder="no"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1723447644"
+            >
+            </iframe>
+            <div class="volume-control">
+              <label for="sc-volume-slider">Volume:</label>
+              <input 
+                type="range" 
+                id="sc-volume-slider" 
+                min="0" 
+                max="100" 
+                value="100"
+                class="volume-slider"
+              >
+              <span id="sc-volume-value">100%</span>
+            </div>
+            <p class="media-caption">
+              <strong>Audio Source:</strong> dj_pussymane. (n.d.). Fatal activity. SoundCloud. <br>
+              https://soundcloud.com/gi44n_dumb/fatal-activity?in=dj_pussymane%2Fsets%2Fambient
+          
+            </p>
+          </div>
+        </div>
+
+        <div class="image-gallery">
+          <h3>Photo Gallery</h3>
+          <div class="gallery-grid">
+            <div class="gallery-item">
+              <img
+                src="sunset.jpg"
+                alt="A serene sunset view from my balcony on the 16th floor, the view is filled by autumn maple trees with golden leaves. The view gives off a peaceful atmosphere."
+                class="gallery-image"
+              />
+              <p class="image-caption">
+                Location: Brampton | Date: January 20, 2024
+              </p>
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="toronto.jpg"
+                alt="Image of Toronto's downtown skyline taken from a ferry. The view shows modern glass skyscrapers."
+                class="gallery-image"
+              />
+              <p class="image-caption">
+                Location: Toronto | Date: July 12, 2024
+              </p>
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="bmw.jpg"
+                alt="A silvery-white BMW 4 Series coupe parked on Gould street which was spotted near campus at night"
+                class="gallery-image"
+              />
+              <p class="image-caption">
+                Location: TMU Campus | Date: October 16, 2024
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer>
         <div class="footer-content">
           <p>&copy; 2024 Afeef Shaikh. All rights reserved.</p>
