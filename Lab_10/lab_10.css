@@ -1,0 +1,62 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d8eefe;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+/* Section headers */
+h2 {
+  text-align: center;
+  color: #34495e;
+  margin-top: 30px;
+}
+
+/* Container styling */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Box styling */
+.box {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph styling */
+p {
+  color: #2c3e50;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* List styling */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  line-height: 1.8;
+}
+
+/* Instagram icon styling */
+a i {
+  font-size: 30px;
+  color: #833ab4;
+  margin: 10px 0;
+  display: block;
+  text-align: center;
+}
